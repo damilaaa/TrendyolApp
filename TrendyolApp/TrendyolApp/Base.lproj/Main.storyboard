@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bvN-8y-oXX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Anasayfa-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrendyolApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gYJ-uf-lAt">
+                                <rect key="frame" x="0.0" y="56" width="414" height="56"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" placeholder="Marka, ürün veya kategori ara" translatesAutoresizingMaskIntoConstraints="NO" id="YqL-v7-7cl">
+                                        <rect key="frame" x="0.0" y="0.0" width="360" height="56"/>
+                                        <color key="backgroundColor" red="0.91366411479999998" green="0.92017866400000004" blue="0.93972231159999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAp-hy-WAo">
+                                        <rect key="frame" x="360" y="0.0" width="54" height="56"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="bell_icon"/>
+                                    </button>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="LIZ-OA-Ur2"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zif-xA-IVc">
+                                <rect key="frame" x="0.0" y="120" width="414" height="34.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MJi-nA-Bvw">
+                                        <rect key="frame" x="0.0" y="0.0" width="207" height="34.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Dh-NP-jOa">
+                                                <rect key="frame" x="0.0" y="0.0" width="103.5" height="34.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Kadın">
+                                                    <color key="baseForegroundColor" name="orange_color"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bj5-it-Qny">
+                                                <rect key="frame" x="103.5" y="0.0" width="103.5" height="34.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Erkek">
+                                                    <color key="baseForegroundColor" systemColor="systemGrayColor"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ga5-N6-e50">
+                                        <rect key="frame" x="207" y="0.0" width="207" height="34.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDE-iS-Zm0">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="34.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="chevron.down.circle" catalog="system" imagePlacement="trailing" title="Tüm Kategoriler">
+                                                    <color key="baseForegroundColor" systemColor="systemGrayColor"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yeni Hizmetlerimizi Keşfet!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aui-9L-OUx">
+                                <rect key="frame" x="24" y="285.5" width="201.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="EOB-dE-Vmx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="f3u-TC-2ep">
+                                <rect key="frame" x="24" y="314.5" width="366" height="111"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="C3P-MB-mie">
+                                        <rect key="frame" x="0.0" y="0.0" width="91.5" height="111"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LxU-Gu-BYd">
+                                                <rect key="frame" x="0.0" y="0.0" width="91.5" height="94"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="hizli_market"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hızlı Market" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ljf-Xu-jox">
+                                                <rect key="frame" x="0.0" y="94" width="91.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="r4R-Pf-uFw">
+                                        <rect key="frame" x="91.5" y="0.0" width="91.5" height="111"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CrU-KN-CeE">
+                                                <rect key="frame" x="0.0" y="0.0" width="91.5" height="94"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="yemek_icon"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yemek" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUC-cz-Har">
+                                                <rect key="frame" x="0.0" y="94" width="91.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="r3U-ae-Lpb">
+                                        <rect key="frame" x="183" y="0.0" width="91.5" height="111"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJQ-Do-wNA">
+                                                <rect key="frame" x="0.0" y="0.0" width="91.5" height="94"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="ikinci_el"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Al, Sat, Kazan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0e3-m9-a3a">
+                                                <rect key="frame" x="0.0" y="94" width="91.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="S94-rX-AfB">
+                                        <rect key="frame" x="274.5" y="0.0" width="91.5" height="111"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAw-St-om4">
+                                                <rect key="frame" x="0.0" y="0.0" width="91.5" height="94"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="kategoriler_icon"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kategoriler" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4R-Df-XVf">
+                                                <rect key="frame" x="0.0" y="94" width="91.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2DU-vl-u0Q">
+                                <rect key="frame" x="0.0" y="162.5" width="414" height="144"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="image_icon">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="751" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wr-8r-KNT">
+                                <rect key="frame" x="0.0" y="566" width="414" height="239"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="trendyol_add"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="749" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhS-h5-fgH">
+                                <rect key="frame" x="0.0" y="441.5" width="414" height="116.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="109" id="2Uj-U6-KUN"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="iphone_add">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.94941163032076725" green="0.95618106416630744" blue="0.97648936570292766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="f3u-TC-2ep" secondAttribute="trailing" constant="24" id="0RE-KR-Vcm"/>
+                            <constraint firstItem="zif-xA-IVc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0WU-OC-Rlm"/>
+                            <constraint firstItem="2DU-vl-u0Q" firstAttribute="top" secondItem="zif-xA-IVc" secondAttribute="bottom" constant="8" id="A5Q-H2-VFO"/>
+                            <constraint firstItem="0wr-8r-KNT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AGs-cb-OGC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0wr-8r-KNT" secondAttribute="bottom" constant="8" id="Bq4-bR-0Dx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gYJ-uf-lAt" secondAttribute="trailing" id="KMg-fv-OLt"/>
+                            <constraint firstAttribute="trailing" secondItem="zif-xA-IVc" secondAttribute="trailing" id="KmO-sa-U0h"/>
+                            <constraint firstItem="0wr-8r-KNT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RUs-Iu-XrT"/>
+                            <constraint firstItem="gYJ-uf-lAt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="RVG-rV-gb5"/>
+                            <constraint firstItem="f3u-TC-2ep" firstAttribute="top" secondItem="aui-9L-OUx" secondAttribute="bottom" constant="8" id="RXK-j6-tme"/>
+                            <constraint firstItem="zif-xA-IVc" firstAttribute="top" secondItem="gYJ-uf-lAt" secondAttribute="bottom" constant="8" id="Z8L-wa-lhT"/>
+                            <constraint firstItem="2DU-vl-u0Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="a5Q-Rr-7dj"/>
+                            <constraint firstItem="aui-9L-OUx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="aD7-cF-JMv"/>
+                            <constraint firstItem="qhS-h5-fgH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="brP-hf-dou"/>
+                            <constraint firstItem="qhS-h5-fgH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cE3-F5-wYD"/>
+                            <constraint firstItem="f3u-TC-2ep" firstAttribute="top" secondItem="2DU-vl-u0Q" secondAttribute="bottom" constant="8" id="eJB-af-MIn"/>
+                            <constraint firstItem="qhS-h5-fgH" firstAttribute="top" secondItem="f3u-TC-2ep" secondAttribute="bottom" constant="16" id="eeW-9F-lGa"/>
+                            <constraint firstAttribute="trailing" secondItem="0wr-8r-KNT" secondAttribute="trailing" id="gbi-I6-bYL"/>
+                            <constraint firstItem="gYJ-uf-lAt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="leA-FI-U2d"/>
+                            <constraint firstItem="0wr-8r-KNT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="n2e-jB-aij"/>
+                            <constraint firstAttribute="trailing" secondItem="2DU-vl-u0Q" secondAttribute="trailing" id="qwi-QG-vnw"/>
+                            <constraint firstItem="0wr-8r-KNT" firstAttribute="top" secondItem="qhS-h5-fgH" secondAttribute="bottom" constant="8" id="wjB-zK-9iC"/>
+                            <constraint firstItem="f3u-TC-2ep" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="x8p-Xa-16F"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Anasayfa" image="home_colored_tabbar" selectedImage="home_colored_tabbar" id="Bmp-p1-B3c">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" name="orange_color"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="buttonAdd" destination="0wr-8r-KNT" id="tbX-0c-fl7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-678.26086956521749" y="711.83035714285711"/>
+        </scene>
+        <!--Trendyol Go-->
+        <scene sceneID="Tel-7F-egh">
+            <objects>
+                <viewController id="r7V-T0-PXP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B1F-zG-bfs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="65m-FZ-yIJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Trendyol Go" image="go_tabbar" selectedImage="go_tabbar" id="FTp-EX-EFm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkW-5a-2v6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131" y="713"/>
+        </scene>
+        <!--Favorilerim-->
+        <scene sceneID="PiJ-M6-pjr">
+            <objects>
+                <viewController id="kPt-mX-fyL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zbN-vm-tll">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dEY-Y3-kfD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favorilerim" image="favourites_tabbar" selectedImage="favourites_tabbar" id="4DS-pL-UKg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bfN-Uq-aR7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="935" y="713"/>
+        </scene>
+        <!--Sepetim-->
+        <scene sceneID="Nzd-zH-1eF">
+            <objects>
+                <viewController id="Dhu-JY-5b9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qyh-4s-MSV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="y5p-Nb-RWF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Sepetim" image="cart_tabbar" selectedImage="cart_tabbar" id="e1r-nZ-Fn7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Is-e3-xeK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1676" y="713"/>
+        </scene>
+        <!--Hesabım-->
+        <scene sceneID="sIv-32-eX0">
+            <objects>
+                <viewController id="rOh-gA-e7K" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QWG-Tk-qef">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="CzZ-wt-vvr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Hesabım" image="account_tabbar" selectedImage="account_tabbar" id="h6y-yg-4wA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WAz-4K-eeg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2457" y="713"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="cIj-zy-5OW">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="bvN-8y-oXX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ip2-dD-uax">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" name="orange_color"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="s1u-DF-9mr"/>
+                        <segue destination="r7V-T0-PXP" kind="relationship" relationship="viewControllers" id="cuX-7w-EAP"/>
+                        <segue destination="kPt-mX-fyL" kind="relationship" relationship="viewControllers" id="tTe-f8-xbI"/>
+                        <segue destination="Dhu-JY-5b9" kind="relationship" relationship="viewControllers" id="X5D-Xm-NRJ"/>
+                        <segue destination="rOh-gA-e7K" kind="relationship" relationship="viewControllers" id="5oz-d4-Rdb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jjn-NC-bOS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="account_tabbar" width="30" height="30"/>
+        <image name="bell_icon" width="30" height="30"/>
+        <image name="cart_tabbar" width="30" height="30"/>
+        <image name="chevron.down.circle" catalog="system" width="32" height="32"/>
+        <image name="favourites_tabbar" width="30" height="30"/>
+        <image name="go_tabbar" width="40" height="40"/>
+        <image name="hizli_market" width="80" height="80"/>
+        <image name="home_colored_tabbar" width="30" height="30"/>
+        <image name="ikinci_el" width="80" height="80"/>
+        <image name="image_icon" width="450" height="130"/>
+        <image name="iphone_add" width="1225" height="150"/>
+        <image name="kategoriler_icon" width="80" height="80"/>
+        <image name="trendyol_add" width="750" height="225"/>
+        <image name="yemek_icon" width="80" height="80"/>
+        <namedColor name="orange_color">
+            <color red="0.8901960784313725" green="0.50980392156862742" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
